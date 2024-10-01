@@ -1,0 +1,85 @@
+{
+  "data_asset_type": null,
+  "expectation_suite_name": "public.new_predictions.warning",
+  "expectations": [
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "id"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "totrmsabvgrd"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "wooddecksf"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "yrsold"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "firstflrsf"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "foundation"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "kitchenqual"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "saleprice"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "predictiontimestamp"
+      },
+      "meta": {}
+    }
+  ],
+  "ge_cloud_id": null,
+  "meta": {
+    "citations": [
+      {
+        "batch_request": {
+          "data_asset_name": "public.new_predictions",
+          "data_connector_name": "default_inferred_data_connector_name",
+          "datasource_name": "my_datasource",
+          "limit": 1000
+        },
+        "citation_date": "2024-10-01T05:10:46.036287Z",
+        "comment": "Created suite added via CLI"
+      }
+    ],
+    "great_expectations_version": "0.18.21"
+  }
+}
