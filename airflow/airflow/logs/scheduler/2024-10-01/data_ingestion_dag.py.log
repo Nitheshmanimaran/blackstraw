@@ -1034,3 +1034,16 @@
 [2024-10-01T13:53:17.358+0530] {logging_mixin.py:190} INFO - [2024-10-01T13:53:17.357+0530] {dag.py:3239} INFO - Sync 1 DAGs
 [2024-10-01T13:53:17.368+0530] {logging_mixin.py:190} INFO - [2024-10-01T13:53:17.368+0530] {dag.py:4180} INFO - Setting next_dagrun for data_ingestion_dag to None, run_after=None
 [2024-10-01T13:53:17.401+0530] {processor.py:208} INFO - Processing /home/username/blackstraw/airflow/airflow/dags/data_ingestion_dag.py took 2.247 seconds
+[2024-10-01T13:53:47.686+0530] {processor.py:186} INFO - Started process (PID=25261) to work on /home/username/blackstraw/airflow/airflow/dags/data_ingestion_dag.py
+[2024-10-01T13:53:47.690+0530] {processor.py:914} INFO - Processing file /home/username/blackstraw/airflow/airflow/dags/data_ingestion_dag.py for tasks to queue
+[2024-10-01T13:53:47.693+0530] {logging_mixin.py:190} INFO - [2024-10-01T13:53:47.692+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/username/blackstraw/airflow/airflow/dags/data_ingestion_dag.py
+[2024-10-01T13:53:49.722+0530] {logging_mixin.py:190} INFO - [2024-10-01T13:53:49.721+0530] {warnings.py:109} WARNING - /home/username/blackstraw/airflow/airflow/dags/data_ingestion_dag.py:88: RemovedInAirflow3Warning: Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead. 
+  with DAG(
+[2024-10-01T13:53:49.723+0530] {logging_mixin.py:190} INFO - [2024-10-01T13:53:49.722+0530] {warnings.py:109} WARNING - /home/username/blackstraw/airflow/airflow/dags/data_ingestion_dag.py:98: RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+  extract_data_task = PythonOperator(
+[2024-10-01T13:53:49.723+0530] {logging_mixin.py:190} INFO - [2024-10-01T13:53:49.723+0530] {warnings.py:109} WARNING - /home/username/blackstraw/airflow/airflow/dags/data_ingestion_dag.py:109: RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+  load_data_task = PythonOperator(
+[2024-10-01T13:53:49.727+0530] {processor.py:925} INFO - DAG(s) 'data_ingestion_dag' retrieved from /home/username/blackstraw/airflow/airflow/dags/data_ingestion_dag.py
+[2024-10-01T13:53:49.741+0530] {logging_mixin.py:190} INFO - [2024-10-01T13:53:49.741+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-01T13:53:49.752+0530] {logging_mixin.py:190} INFO - [2024-10-01T13:53:49.751+0530] {dag.py:4180} INFO - Setting next_dagrun for data_ingestion_dag to None, run_after=None
+[2024-10-01T13:53:49.794+0530] {processor.py:208} INFO - Processing /home/username/blackstraw/airflow/airflow/dags/data_ingestion_dag.py took 2.127 seconds
