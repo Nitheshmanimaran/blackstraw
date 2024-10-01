@@ -70,7 +70,7 @@ def predict(features: HouseFeatures):
     cursor.close()
     conn.close()
     
-    return {"SalePrice": sale_price, "PredictionTimestamp": prediction_timestamp}
+    return {"SalePrice": f"{sale_price:.2f}", "PredictionTimestamp": prediction_timestamp}
 
 @app.get("/check_db")
 def check_db():
