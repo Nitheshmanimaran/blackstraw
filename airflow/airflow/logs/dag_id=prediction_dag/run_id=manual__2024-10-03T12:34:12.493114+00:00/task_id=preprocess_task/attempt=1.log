@@ -1,0 +1,21 @@
+[2024-10-03T18:04:16.037+0530] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-10-03T18:04:16.049+0530] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: prediction_dag.preprocess_task manual__2024-10-03T12:34:12.493114+00:00 [queued]>
+[2024-10-03T18:04:16.056+0530] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: prediction_dag.preprocess_task manual__2024-10-03T12:34:12.493114+00:00 [queued]>
+[2024-10-03T18:04:16.056+0530] {taskinstance.py:2865} INFO - Starting attempt 1 of 2
+[2024-10-03T18:04:16.080+0530] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): preprocess_task> on 2024-10-03 12:34:12.493114+00:00
+[2024-10-03T18:04:16.085+0530] {standard_task_runner.py:72} INFO - Started process 7356 to run task
+[2024-10-03T18:04:16.089+0530] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'prediction_dag', 'preprocess_task', 'manual__2024-10-03T12:34:12.493114+00:00', '--job-id', '79', '--raw', '--subdir', 'DAGS_FOLDER/prediction_dag.py', '--cfg-path', '/tmp/tmpfrylpupu']
+[2024-10-03T18:04:16.091+0530] {standard_task_runner.py:105} INFO - Job 79: Subtask preprocess_task
+[2024-10-03T18:04:16.153+0530] {task_command.py:467} INFO - Running <TaskInstance: prediction_dag.preprocess_task manual__2024-10-03T12:34:12.493114+00:00 [running]> on host Nithesh-Kumar.localdomain
+[2024-10-03T18:04:16.259+0530] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='prediction_dag' AIRFLOW_CTX_TASK_ID='preprocess_task' AIRFLOW_CTX_EXECUTION_DATE='2024-10-03T12:34:12.493114+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-03T12:34:12.493114+00:00'
+[2024-10-03T18:04:16.260+0530] {taskinstance.py:731} INFO - ::endgroup::
+[2024-10-03T18:04:16.289+0530] {base.py:84} INFO - Retrieving connection 'source_***_conn'
+[2024-10-03T18:05:07.784+0530] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2024-10-03T18:05:07.808+0530] {process_utils.py:132} INFO - Sending Signals.SIGTERM to group 7356. PIDs of all processes in the group: [7356]
+[2024-10-03T18:05:07.809+0530] {process_utils.py:87} INFO - Sending the signal Signals.SIGTERM to group 7356
+[2024-10-03T18:05:11.590+0530] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-10-03T18:05:11.606+0530] {taskinstance.py:2602} INFO - Dependencies not met for <TaskInstance: prediction_dag.preprocess_task manual__2024-10-03T12:34:12.493114+00:00 [running]>, dependency 'Task Instance State' FAILED: Task is in the 'running' state.
+[2024-10-03T18:05:11.613+0530] {taskinstance.py:2602} INFO - Dependencies not met for <TaskInstance: prediction_dag.preprocess_task manual__2024-10-03T12:34:12.493114+00:00 [running]>, dependency 'Task Instance Not Running' FAILED: Task is in the running state
+[2024-10-03T18:05:11.614+0530] {local_task_job_runner.py:166} INFO - Task is not able to be run
+[2024-10-03T18:06:28.793+0530] {taskinstance.py:3092} ERROR - Received SIGTERM. Terminating subprocesses.
+[2024-10-03T18:06:28.833+0530] {taskinstance.py:340} INFO - ::group::Post task execution logs

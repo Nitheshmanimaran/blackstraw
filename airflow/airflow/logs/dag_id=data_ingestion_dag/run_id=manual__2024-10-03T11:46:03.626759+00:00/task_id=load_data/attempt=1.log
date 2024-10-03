@@ -1,0 +1,18 @@
+[2024-10-03T17:37:03.077+0530] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-10-03T17:37:03.087+0530] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: data_ingestion_dag.load_data manual__2024-10-03T11:46:03.626759+00:00 [queued]>
+[2024-10-03T17:37:03.093+0530] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: data_ingestion_dag.load_data manual__2024-10-03T11:46:03.626759+00:00 [queued]>
+[2024-10-03T17:37:03.093+0530] {taskinstance.py:2865} INFO - Starting attempt 1 of 2
+[2024-10-03T17:37:03.116+0530] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): load_data> on 2024-10-03 11:46:03.626759+00:00
+[2024-10-03T17:37:03.121+0530] {standard_task_runner.py:72} INFO - Started process 593 to run task
+[2024-10-03T17:37:03.124+0530] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'data_ingestion_dag', 'load_data', 'manual__2024-10-03T11:46:03.626759+00:00', '--job-id', '73', '--raw', '--subdir', 'DAGS_FOLDER/data_ingestion_dag.py', '--cfg-path', '/tmp/tmpbnmzv4kc']
+[2024-10-03T17:37:03.126+0530] {standard_task_runner.py:105} INFO - Job 73: Subtask load_data
+[2024-10-03T17:37:03.169+0530] {task_command.py:467} INFO - Running <TaskInstance: data_ingestion_dag.load_data manual__2024-10-03T11:46:03.626759+00:00 [running]> on host Nithesh-Kumar.localdomain
+[2024-10-03T17:37:03.258+0530] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='data_ingestion_dag' AIRFLOW_CTX_TASK_ID='load_data' AIRFLOW_CTX_EXECUTION_DATE='2024-10-03T11:46:03.626759+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-03T11:46:03.626759+00:00'
+[2024-10-03T17:37:03.259+0530] {taskinstance.py:731} INFO - ::endgroup::
+[2024-10-03T17:37:03.294+0530] {base.py:84} INFO - Retrieving connection 'target_***_conn'
+[2024-10-03T17:37:04.007+0530] {python.py:240} INFO - Done. Returned value was: None
+[2024-10-03T17:37:04.014+0530] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-10-03T17:37:04.015+0530] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=data_ingestion_dag, task_id=load_data, run_id=manual__2024-10-03T11:46:03.626759+00:00, execution_date=20241003T114603, start_date=20241003T120703, end_date=20241003T120704
+[2024-10-03T17:37:04.062+0530] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-10-03T17:37:04.076+0530] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-10-03T17:37:04.076+0530] {local_task_job_runner.py:245} INFO - ::endgroup::

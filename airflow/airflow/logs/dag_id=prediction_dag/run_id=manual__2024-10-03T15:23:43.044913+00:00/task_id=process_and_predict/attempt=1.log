@@ -1,0 +1,18 @@
+[2024-10-03T20:53:56.688+0530] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-10-03T20:53:56.700+0530] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: prediction_dag.process_and_predict manual__2024-10-03T15:23:43.044913+00:00 [queued]>
+[2024-10-03T20:53:56.712+0530] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: prediction_dag.process_and_predict manual__2024-10-03T15:23:43.044913+00:00 [queued]>
+[2024-10-03T20:53:56.712+0530] {taskinstance.py:2865} INFO - Starting attempt 1 of 2
+[2024-10-03T20:53:56.751+0530] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): process_and_predict> on 2024-10-03 15:23:43.044913+00:00
+[2024-10-03T20:53:56.760+0530] {standard_task_runner.py:72} INFO - Started process 10564 to run task
+[2024-10-03T20:53:56.767+0530] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'prediction_dag', 'process_and_predict', 'manual__2024-10-03T15:23:43.044913+00:00', '--job-id', '113', '--raw', '--subdir', 'DAGS_FOLDER/prediction_dag.py', '--cfg-path', '/tmp/tmpjhyu80tz']
+[2024-10-03T20:53:56.771+0530] {standard_task_runner.py:105} INFO - Job 113: Subtask process_and_predict
+[2024-10-03T20:53:56.850+0530] {task_command.py:467} INFO - Running <TaskInstance: prediction_dag.process_and_predict manual__2024-10-03T15:23:43.044913+00:00 [running]> on host Nithesh-Kumar.localdomain
+[2024-10-03T20:53:56.975+0530] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='prediction_dag' AIRFLOW_CTX_TASK_ID='process_and_predict' AIRFLOW_CTX_EXECUTION_DATE='2024-10-03T15:23:43.044913+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-03T15:23:43.044913+00:00'
+[2024-10-03T20:53:56.977+0530] {taskinstance.py:731} INFO - ::endgroup::
+[2024-10-03T20:53:57.127+0530] {logging_mixin.py:190} WARNING - /home/username/.local/lib/python3.10/site-packages/sklearn/utils/validation.py:877 UserWarning: pandas.DataFrame with sparse columns found.It will be converted to a dense numpy array.
+[2024-10-03T20:53:57.214+0530] {python.py:240} INFO - Done. Returned value was: None
+[2024-10-03T20:53:57.227+0530] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-10-03T20:53:57.229+0530] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=prediction_dag, task_id=process_and_predict, run_id=manual__2024-10-03T15:23:43.044913+00:00, execution_date=20241003T152343, start_date=20241003T152356, end_date=20241003T152357
+[2024-10-03T20:53:57.309+0530] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-10-03T20:53:57.383+0530] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-10-03T20:53:57.385+0530] {local_task_job_runner.py:245} INFO - ::endgroup::

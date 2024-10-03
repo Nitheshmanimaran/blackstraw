@@ -16,7 +16,7 @@ from great_expectations.exceptions import DataContextError
 from house_prices import FEATURE_COLUMNS, MODEL_PATH
 from house_prices.preprocess import preprocess
 
-MONITOR_DIR = "/home/username/blackstraw/raw_data"
+MONITOR_DIR = "/home/username/blackstraw/data/raw_data"
 
 def extract_data(**kwargs):
     import glob
@@ -27,7 +27,7 @@ def extract_data(**kwargs):
     csv_files = [f for f in glob.glob(os.path.join(directory_to_monitor, '*.csv')) if '_checked' not in f]
     
     if not csv_files:
-        print("All csv files are already scanned. No new files" + csv_files)
+        print("All csv files are already scanned. No new files")
     
     for file_path in csv_files:
         df_raw = pd.read_csv(file_path)
@@ -35,7 +35,7 @@ def extract_data(**kwargs):
         df = preprocess(df_raw[FEATURE_COLUMNS], is_training=False)
         kwargs['ti'].xcom_push(key='extracted_rows', value=df.to_dict(orient='records'))
         
-        df.to_csv('/home/username/blackstraw/sample.csv', index=False)
+        df.to_csv('/home/username/blackstraw/data/sample.csv', index=False)
         # Rename the processed file
         new_file_path = file_path.replace('.csv', '_checked.csv')
         os.rename(file_path, new_file_path)
@@ -81,8 +81,7 @@ def load_data(**kwargs):
 
     # Create the updated table schema
     target_cursor.execute("""
-        CREATE TABLE IF NOT EXISTS target_predictions (
-            id SERIAL PRIMARY KEY,
+        CREATE TABLE IF NOT EXISTS public.target_predictions (
             Foundation_BrkTil TEXT,
             Foundation_CBlock TEXT,
             Foundation_PConc TEXT,

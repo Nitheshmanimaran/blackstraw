@@ -1,0 +1,21 @@
+[2024-10-03T20:58:26.710+0530] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-10-03T20:58:26.720+0530] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: data_ingestion_dag.sense_file manual__2024-10-03T15:28:21.013516+00:00 [queued]>
+[2024-10-03T20:58:26.725+0530] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: data_ingestion_dag.sense_file manual__2024-10-03T15:28:21.013516+00:00 [queued]>
+[2024-10-03T20:58:26.726+0530] {taskinstance.py:2865} INFO - Starting attempt 1 of 2
+[2024-10-03T20:58:26.756+0530] {taskinstance.py:2888} INFO - Executing <Task(FileSensor): sense_file> on 2024-10-03 15:28:21.013516+00:00
+[2024-10-03T20:58:26.764+0530] {standard_task_runner.py:72} INFO - Started process 12239 to run task
+[2024-10-03T20:58:26.772+0530] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'data_ingestion_dag', 'sense_file', 'manual__2024-10-03T15:28:21.013516+00:00', '--job-id', '118', '--raw', '--subdir', 'DAGS_FOLDER/data_ingestion_dag.py', '--cfg-path', '/tmp/tmp5jlhmse7']
+[2024-10-03T20:58:26.777+0530] {standard_task_runner.py:105} INFO - Job 118: Subtask sense_file
+[2024-10-03T20:58:26.853+0530] {task_command.py:467} INFO - Running <TaskInstance: data_ingestion_dag.sense_file manual__2024-10-03T15:28:21.013516+00:00 [running]> on host Nithesh-Kumar.localdomain
+[2024-10-03T20:58:26.948+0530] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='data_ingestion_dag' AIRFLOW_CTX_TASK_ID='sense_file' AIRFLOW_CTX_EXECUTION_DATE='2024-10-03T15:28:21.013516+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-03T15:28:21.013516+00:00'
+[2024-10-03T20:58:26.950+0530] {taskinstance.py:731} INFO - ::endgroup::
+[2024-10-03T20:58:26.965+0530] {baseoperator.py:405} WARNING - FileSensor.execute cannot be called outside TaskInstance!
+[2024-10-03T20:58:26.972+0530] {base.py:84} INFO - Retrieving connection 'fs_default'
+[2024-10-03T20:58:26.972+0530] {filesystem.py:109} INFO - Poking for file /home/username/blackstraw/data/raw_data
+[2024-10-03T20:58:26.973+0530] {base.py:336} INFO - Success criteria met. Exiting.
+[2024-10-03T20:58:26.973+0530] {filesystem.py:109} INFO - Poking for file /home/username/blackstraw/data/raw_data
+[2024-10-03T20:58:26.977+0530] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-10-03T20:58:26.977+0530] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=data_ingestion_dag, task_id=sense_file, run_id=manual__2024-10-03T15:28:21.013516+00:00, execution_date=20241003T152821, start_date=20241003T152826, end_date=20241003T152826
+[2024-10-03T20:58:27.030+0530] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-10-03T20:58:27.077+0530] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-10-03T20:58:27.095+0530] {local_task_job_runner.py:245} INFO - ::endgroup::

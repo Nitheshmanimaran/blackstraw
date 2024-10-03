@@ -1,0 +1,17 @@
+[2024-10-03T20:56:30.207+0530] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-10-03T20:56:30.216+0530] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: prediction_dag.check_for_new_files manual__2024-10-03T15:26:26.330520+00:00 [queued]>
+[2024-10-03T20:56:30.222+0530] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: prediction_dag.check_for_new_files manual__2024-10-03T15:26:26.330520+00:00 [queued]>
+[2024-10-03T20:56:30.222+0530] {taskinstance.py:2865} INFO - Starting attempt 1 of 2
+[2024-10-03T20:56:30.244+0530] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): check_for_new_files> on 2024-10-03 15:26:26.330520+00:00
+[2024-10-03T20:56:30.248+0530] {standard_task_runner.py:72} INFO - Started process 11516 to run task
+[2024-10-03T20:56:30.251+0530] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'prediction_dag', 'check_for_new_files', 'manual__2024-10-03T15:26:26.330520+00:00', '--job-id', '116', '--raw', '--subdir', 'DAGS_FOLDER/prediction_dag.py', '--cfg-path', '/tmp/tmpomkpmpkt']
+[2024-10-03T20:56:30.253+0530] {standard_task_runner.py:105} INFO - Job 116: Subtask check_for_new_files
+[2024-10-03T20:56:30.317+0530] {task_command.py:467} INFO - Running <TaskInstance: prediction_dag.check_for_new_files manual__2024-10-03T15:26:26.330520+00:00 [running]> on host Nithesh-Kumar.localdomain
+[2024-10-03T20:56:30.435+0530] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='prediction_dag' AIRFLOW_CTX_TASK_ID='check_for_new_files' AIRFLOW_CTX_EXECUTION_DATE='2024-10-03T15:26:26.330520+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-03T15:26:26.330520+00:00'
+[2024-10-03T20:56:30.436+0530] {taskinstance.py:731} INFO - ::endgroup::
+[2024-10-03T20:56:30.470+0530] {python.py:240} INFO - Done. Returned value was: None
+[2024-10-03T20:56:30.475+0530] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-10-03T20:56:30.475+0530] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=prediction_dag, task_id=check_for_new_files, run_id=manual__2024-10-03T15:26:26.330520+00:00, execution_date=20241003T152626, start_date=20241003T152630, end_date=20241003T152630
+[2024-10-03T20:56:30.547+0530] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-10-03T20:56:30.569+0530] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-10-03T20:56:30.587+0530] {local_task_job_runner.py:245} INFO - ::endgroup::

@@ -1,0 +1,17 @@
+[2024-10-03T20:56:09.907+0530] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-10-03T20:56:09.919+0530] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: prediction_dag.process_and_predict manual__2024-10-03T15:26:02.981125+00:00 [queued]>
+[2024-10-03T20:56:09.926+0530] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: prediction_dag.process_and_predict manual__2024-10-03T15:26:02.981125+00:00 [queued]>
+[2024-10-03T20:56:09.926+0530] {taskinstance.py:2865} INFO - Starting attempt 1 of 2
+[2024-10-03T20:56:09.949+0530] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): process_and_predict> on 2024-10-03 15:26:02.981125+00:00
+[2024-10-03T20:56:09.954+0530] {standard_task_runner.py:72} INFO - Started process 11362 to run task
+[2024-10-03T20:56:09.958+0530] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'prediction_dag', 'process_and_predict', 'manual__2024-10-03T15:26:02.981125+00:00', '--job-id', '115', '--raw', '--subdir', 'DAGS_FOLDER/prediction_dag.py', '--cfg-path', '/tmp/tmp_xa2tcb1']
+[2024-10-03T20:56:09.959+0530] {standard_task_runner.py:105} INFO - Job 115: Subtask process_and_predict
+[2024-10-03T20:56:10.000+0530] {task_command.py:467} INFO - Running <TaskInstance: prediction_dag.process_and_predict manual__2024-10-03T15:26:02.981125+00:00 [running]> on host Nithesh-Kumar.localdomain
+[2024-10-03T20:56:10.095+0530] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='prediction_dag' AIRFLOW_CTX_TASK_ID='process_and_predict' AIRFLOW_CTX_EXECUTION_DATE='2024-10-03T15:26:02.981125+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-03T15:26:02.981125+00:00'
+[2024-10-03T20:56:10.096+0530] {taskinstance.py:731} INFO - ::endgroup::
+[2024-10-03T20:56:10.131+0530] {python.py:240} INFO - Done. Returned value was: None
+[2024-10-03T20:56:10.137+0530] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-10-03T20:56:10.138+0530] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=prediction_dag, task_id=process_and_predict, run_id=manual__2024-10-03T15:26:02.981125+00:00, execution_date=20241003T152602, start_date=20241003T152609, end_date=20241003T152610
+[2024-10-03T20:56:10.172+0530] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-10-03T20:56:10.192+0530] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-10-03T20:56:10.193+0530] {local_task_job_runner.py:245} INFO - ::endgroup::

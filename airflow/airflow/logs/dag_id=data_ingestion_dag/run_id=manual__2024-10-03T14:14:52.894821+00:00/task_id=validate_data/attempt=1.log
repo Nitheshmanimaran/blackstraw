@@ -1,0 +1,35 @@
+[2024-10-03T19:45:11.276+0530] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-10-03T19:45:11.286+0530] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: data_ingestion_dag.validate_data manual__2024-10-03T14:14:52.894821+00:00 [queued]>
+[2024-10-03T19:45:11.293+0530] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: data_ingestion_dag.validate_data manual__2024-10-03T14:14:52.894821+00:00 [queued]>
+[2024-10-03T19:45:11.294+0530] {taskinstance.py:2865} INFO - Starting attempt 1 of 2
+[2024-10-03T19:45:11.317+0530] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): validate_data> on 2024-10-03 14:14:52.894821+00:00
+[2024-10-03T19:45:11.321+0530] {standard_task_runner.py:72} INFO - Started process 19318 to run task
+[2024-10-03T19:45:11.325+0530] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'data_ingestion_dag', 'validate_data', 'manual__2024-10-03T14:14:52.894821+00:00', '--job-id', '93', '--raw', '--subdir', 'DAGS_FOLDER/data_ingestion_dag.py', '--cfg-path', '/tmp/tmpj514cz21']
+[2024-10-03T19:45:11.328+0530] {standard_task_runner.py:105} INFO - Job 93: Subtask validate_data
+[2024-10-03T19:45:11.400+0530] {task_command.py:467} INFO - Running <TaskInstance: data_ingestion_dag.validate_data manual__2024-10-03T14:14:52.894821+00:00 [running]> on host Nithesh-Kumar.localdomain
+[2024-10-03T19:45:11.495+0530] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='data_ingestion_dag' AIRFLOW_CTX_TASK_ID='validate_data' AIRFLOW_CTX_EXECUTION_DATE='2024-10-03T14:14:52.894821+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-03T14:14:52.894821+00:00'
+[2024-10-03T19:45:11.497+0530] {taskinstance.py:731} INFO - ::endgroup::
+[2024-10-03T19:45:11.589+0530] {file_data_context.py:222} INFO - FileDataContext loading fluent config
+[2024-10-03T19:45:11.591+0530] {config.py:187} INFO - Loading 'datasources' ->
+[]
+[2024-10-03T19:45:11.690+0530] {validator.py:1467} INFO - 	28 expectation(s) included in expectation_suite.
+[2024-10-03T19:45:11.872+0530] {logging_mixin.py:190} WARNING - Calculating Metrics:   0%|          | 0/73 [00:00<?, ?it/s]
+[2024-10-03T19:45:11.873+0530] {logging_mixin.py:190} WARNING - Calculating Metrics:   0%|          | 0/73 [00:00<?, ?it/s]
+[2024-10-03T19:45:11.873+0530] {logging_mixin.py:190} WARNING - Calculating Metrics:   3%|2         | 2/73 [00:00<00:00, 2123.70it/s]
+[2024-10-03T19:45:11.911+0530] {logging_mixin.py:190} WARNING - Calculating Metrics:   3%|2         | 2/73 [00:00<00:01, 51.75it/s]  
+[2024-10-03T19:45:11.912+0530] {logging_mixin.py:190} WARNING - Calculating Metrics:   4%|4         | 3/73 [00:00<00:00, 76.42it/s]
+[2024-10-03T19:45:11.945+0530] {logging_mixin.py:190} WARNING - Calculating Metrics:   4%|4         | 3/73 [00:00<00:01, 41.29it/s]
+[2024-10-03T19:45:11.953+0530] {logging_mixin.py:190} WARNING - Calculating Metrics:  23%|##3       | 17/73 [00:00<00:00, 212.72it/s]
+[2024-10-03T19:45:11.982+0530] {logging_mixin.py:190} WARNING - Calculating Metrics:  23%|##3       | 17/73 [00:00<00:00, 155.02it/s]
+[2024-10-03T19:45:11.983+0530] {logging_mixin.py:190} WARNING - Calculating Metrics:  23%|##3       | 17/73 [00:00<00:00, 155.02it/s]
+[2024-10-03T19:45:12.013+0530] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 73/73 [00:00<00:00, 155.02it/s]
+[2024-10-03T19:45:12.025+0530] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 73/73 [00:00<00:00, 155.02it/s]
+[2024-10-03T19:45:12.025+0530] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 73/73 [00:00<00:00, 155.02it/s]
+[2024-10-03T19:45:12.026+0530] {logging_mixin.py:190} WARNING - Calculating Metrics: 100%|##########| 73/73 [00:00<00:00, 477.23it/s]
+[2024-10-03T19:45:12.434+0530] {logging_mixin.py:190} INFO - Data quality check passed.
+[2024-10-03T19:45:13.306+0530] {python.py:240} INFO - Done. Returned value was: None
+[2024-10-03T19:45:13.320+0530] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-10-03T19:45:13.321+0530] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=data_ingestion_dag, task_id=validate_data, run_id=manual__2024-10-03T14:14:52.894821+00:00, execution_date=20241003T141452, start_date=20241003T141511, end_date=20241003T141513
+[2024-10-03T19:45:13.388+0530] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-10-03T19:45:13.408+0530] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-10-03T19:45:13.429+0530] {local_task_job_runner.py:245} INFO - ::endgroup::

@@ -11,3 +11,9 @@ def make_predictions(filepath: str) -> pd.DataFrame:
     model = joblib.load(MODEL_PATH)
     df_raw[LABEL_COLUMN] = model.predict(df)
     return df_raw
+
+def make_predictions_df(df: pd.DataFrame) -> pd.DataFrame:
+    df = preprocess(df, is_training=False)
+    model = joblib.load(MODEL_PATH)
+    df[LABEL_COLUMN] = model.predict(df)
+    return df
