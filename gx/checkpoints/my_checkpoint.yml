@@ -1,52 +1,19 @@
-action_list:
-- action:
-    class_name: StoreValidationResultAction
-  name: store_validation_result
-- action:
-    class_name: StoreEvaluationParametersAction
-  name: store_evaluation_params
-- action:
-    class_name: UpdateDataDocsAction
-  name: update_data_docs
-- action:
-    class_name: EmailAction
-    notify_on: failure
-    notify_with: smtp
-    receiver_emails:
-    - nithesh.kumar@blackstraw.ai
-    renderer:
-      class_name: EmailRenderer
-      module_name: great_expectations.render.renderer.email_renderer
-    sender_alias: Great Expectations
-    sender_login: nithesh.kumar@blackstraw.ai
-    sender_password: npcr lgni nors byst
-    smtp_address: smtp.gmail.com
-    smtp_port: 587
-    use_tls: true
-  name: send_email_on_failure
-- action:
-    class_name: EmailAction
-    notify_on: success
-    notify_with: smtp
-    receiver_emails:
-    - nithesh.kumar@blackstraw.ai
-    renderer:
-      class_name: EmailRenderer
-      module_name: great_expectations.render.renderer.email_renderer
-    sender_alias: Great Expectations
-    sender_login: nithesh.kumar@blackstraw.ai
-    sender_password: npcr lgni nors byst
-    smtp_address: smtp.gmail.com
-    smtp_port: 587
-    use_tls: true
-  name: send_email_on_success
-class_name: SimpleCheckpoint
-config_version: 1.0
-name: my_checkpoint
-validations:
-- batch_request:
-    data_asset_name: public.new_predictions
-    data_connector_name: default_inferred_data_connector_name
-    datasource_name: my_datasource
-    limit: 1000
-  expectation_suite_name: public.new_predictions.warning
+   # great_expectations/checkpoints/my_checkpoint.yml
+   name: my_checkpoint
+   config_version: 1.0
+   class_name: Checkpoint
+   run_name_template: "%Y-%M-MyCheckpoint"
+   validations:
+     - batch_request:
+         datasource_name: my_datasource
+         data_connector_name: default_inferred_data_connector_name
+         data_asset_name: extracted_data.csv
+         limit: 1000
+       expectation_suite_name: extracted_data.csv.warning
+   action_list:
+     - name: store_validation_result
+       action:
+         class_name: StoreValidationResultAction
+     - name: update_data_docs
+       action:
+         class_name: UpdateDataDocsAction

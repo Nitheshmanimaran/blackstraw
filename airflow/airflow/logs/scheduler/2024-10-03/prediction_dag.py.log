@@ -1,0 +1,91 @@
+[2024-10-03T09:41:16.239+0530] {processor.py:186} INFO - Started process (PID=1362) to work on /home/username/blackstraw/airflow/airflow/dags/prediction_dag.py
+[2024-10-03T09:41:16.240+0530] {processor.py:914} INFO - Processing file /home/username/blackstraw/airflow/airflow/dags/prediction_dag.py for tasks to queue
+[2024-10-03T09:41:16.243+0530] {logging_mixin.py:190} INFO - [2024-10-03T09:41:16.242+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/username/blackstraw/airflow/airflow/dags/prediction_dag.py
+[2024-10-03T09:41:18.145+0530] {logging_mixin.py:190} INFO - [2024-10-03T09:41:18.145+0530] {warnings.py:109} WARNING - /home/username/blackstraw/airflow/airflow/dags/prediction_dag.py:88: RemovedInAirflow3Warning: Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead. 
+  with DAG(
+[2024-10-03T09:41:18.146+0530] {logging_mixin.py:190} INFO - [2024-10-03T09:41:18.146+0530] {warnings.py:109} WARNING - /home/username/blackstraw/airflow/airflow/dags/prediction_dag.py:98: RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+  extract_data_task = PythonOperator(
+[2024-10-03T09:41:18.147+0530] {logging_mixin.py:190} INFO - [2024-10-03T09:41:18.147+0530] {warnings.py:109} WARNING - /home/username/blackstraw/airflow/airflow/dags/prediction_dag.py:109: RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+  load_data_task = PythonOperator(
+[2024-10-03T09:41:18.148+0530] {processor.py:925} INFO - DAG(s) 'data_ingestion_dag' retrieved from /home/username/blackstraw/airflow/airflow/dags/prediction_dag.py
+[2024-10-03T09:41:18.313+0530] {logging_mixin.py:190} INFO - [2024-10-03T09:41:18.313+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-03T09:41:18.328+0530] {logging_mixin.py:190} INFO - [2024-10-03T09:41:18.327+0530] {dag.py:4180} INFO - Setting next_dagrun for data_ingestion_dag to None, run_after=None
+[2024-10-03T09:41:18.369+0530] {processor.py:208} INFO - Processing /home/username/blackstraw/airflow/airflow/dags/prediction_dag.py took 2.137 seconds
+[2024-10-03T09:41:50.320+0530] {processor.py:186} INFO - Started process (PID=1593) to work on /home/username/blackstraw/airflow/airflow/dags/prediction_dag.py
+[2024-10-03T09:41:50.325+0530] {processor.py:914} INFO - Processing file /home/username/blackstraw/airflow/airflow/dags/prediction_dag.py for tasks to queue
+[2024-10-03T09:41:50.330+0530] {logging_mixin.py:190} INFO - [2024-10-03T09:41:50.329+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/username/blackstraw/airflow/airflow/dags/prediction_dag.py
+[2024-10-03T09:41:52.061+0530] {logging_mixin.py:190} INFO - [2024-10-03T09:41:52.061+0530] {warnings.py:109} WARNING - /home/username/blackstraw/airflow/airflow/dags/prediction_dag.py:88: RemovedInAirflow3Warning: Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead. 
+  with DAG(
+[2024-10-03T09:41:52.062+0530] {logging_mixin.py:190} INFO - [2024-10-03T09:41:52.062+0530] {warnings.py:109} WARNING - /home/username/blackstraw/airflow/airflow/dags/prediction_dag.py:98: RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+  extract_data_task = PythonOperator(
+[2024-10-03T09:41:52.063+0530] {logging_mixin.py:190} INFO - [2024-10-03T09:41:52.063+0530] {warnings.py:109} WARNING - /home/username/blackstraw/airflow/airflow/dags/prediction_dag.py:109: RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+  load_data_task = PythonOperator(
+[2024-10-03T09:41:52.065+0530] {processor.py:925} INFO - DAG(s) 'data_ingestion_dag' retrieved from /home/username/blackstraw/airflow/airflow/dags/prediction_dag.py
+[2024-10-03T09:41:52.068+0530] {logging_mixin.py:190} INFO - [2024-10-03T09:41:52.068+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-03T09:41:52.078+0530] {logging_mixin.py:190} INFO - [2024-10-03T09:41:52.078+0530] {dag.py:4180} INFO - Setting next_dagrun for data_ingestion_dag to None, run_after=None
+[2024-10-03T09:41:52.112+0530] {processor.py:208} INFO - Processing /home/username/blackstraw/airflow/airflow/dags/prediction_dag.py took 1.805 seconds
+[2024-10-03T09:42:22.375+0530] {processor.py:186} INFO - Started process (PID=1857) to work on /home/username/blackstraw/airflow/airflow/dags/prediction_dag.py
+[2024-10-03T09:42:22.377+0530] {processor.py:914} INFO - Processing file /home/username/blackstraw/airflow/airflow/dags/prediction_dag.py for tasks to queue
+[2024-10-03T09:42:22.381+0530] {logging_mixin.py:190} INFO - [2024-10-03T09:42:22.380+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/username/blackstraw/airflow/airflow/dags/prediction_dag.py
+[2024-10-03T09:42:24.389+0530] {logging_mixin.py:190} INFO - [2024-10-03T09:42:24.389+0530] {warnings.py:109} WARNING - /home/username/blackstraw/airflow/airflow/dags/prediction_dag.py:88: RemovedInAirflow3Warning: Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead. 
+  with DAG(
+[2024-10-03T09:42:24.390+0530] {logging_mixin.py:190} INFO - [2024-10-03T09:42:24.390+0530] {warnings.py:109} WARNING - /home/username/blackstraw/airflow/airflow/dags/prediction_dag.py:98: RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+  extract_data_task = PythonOperator(
+[2024-10-03T09:42:24.391+0530] {logging_mixin.py:190} INFO - [2024-10-03T09:42:24.391+0530] {warnings.py:109} WARNING - /home/username/blackstraw/airflow/airflow/dags/prediction_dag.py:109: RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+  load_data_task = PythonOperator(
+[2024-10-03T09:42:24.393+0530] {processor.py:925} INFO - DAG(s) 'data_ingestion_dag' retrieved from /home/username/blackstraw/airflow/airflow/dags/prediction_dag.py
+[2024-10-03T09:42:24.479+0530] {logging_mixin.py:190} INFO - [2024-10-03T09:42:24.479+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-03T09:42:24.489+0530] {logging_mixin.py:190} INFO - [2024-10-03T09:42:24.488+0530] {dag.py:4180} INFO - Setting next_dagrun for data_ingestion_dag to None, run_after=None
+[2024-10-03T09:42:24.520+0530] {processor.py:208} INFO - Processing /home/username/blackstraw/airflow/airflow/dags/prediction_dag.py took 2.155 seconds
+[2024-10-03T09:42:56.653+0530] {processor.py:186} INFO - Started process (PID=1990) to work on /home/username/blackstraw/airflow/airflow/dags/prediction_dag.py
+[2024-10-03T09:42:56.655+0530] {processor.py:914} INFO - Processing file /home/username/blackstraw/airflow/airflow/dags/prediction_dag.py for tasks to queue
+[2024-10-03T09:42:56.659+0530] {logging_mixin.py:190} INFO - [2024-10-03T09:42:56.659+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/username/blackstraw/airflow/airflow/dags/prediction_dag.py
+[2024-10-03T09:42:58.876+0530] {logging_mixin.py:190} INFO - [2024-10-03T09:42:58.876+0530] {warnings.py:109} WARNING - /home/username/blackstraw/airflow/airflow/dags/prediction_dag.py:88: RemovedInAirflow3Warning: Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead. 
+  with DAG(
+[2024-10-03T09:42:58.878+0530] {logging_mixin.py:190} INFO - [2024-10-03T09:42:58.877+0530] {warnings.py:109} WARNING - /home/username/blackstraw/airflow/airflow/dags/prediction_dag.py:98: RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+  extract_data_task = PythonOperator(
+[2024-10-03T09:42:58.883+0530] {logging_mixin.py:190} INFO - [2024-10-03T09:42:58.883+0530] {warnings.py:109} WARNING - /home/username/blackstraw/airflow/airflow/dags/prediction_dag.py:109: RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+  load_data_task = PythonOperator(
+[2024-10-03T09:42:58.889+0530] {processor.py:925} INFO - DAG(s) 'data_ingestion_dag' retrieved from /home/username/blackstraw/airflow/airflow/dags/prediction_dag.py
+[2024-10-03T09:42:58.905+0530] {logging_mixin.py:190} INFO - [2024-10-03T09:42:58.904+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-03T09:42:58.927+0530] {logging_mixin.py:190} INFO - [2024-10-03T09:42:58.926+0530] {dag.py:4180} INFO - Setting next_dagrun for data_ingestion_dag to None, run_after=None
+[2024-10-03T09:42:58.967+0530] {processor.py:208} INFO - Processing /home/username/blackstraw/airflow/airflow/dags/prediction_dag.py took 2.324 seconds
+[2024-10-03T10:36:11.870+0530] {processor.py:186} INFO - Started process (PID=9389) to work on /home/username/blackstraw/airflow/airflow/dags/prediction_dag.py
+[2024-10-03T10:36:11.872+0530] {processor.py:914} INFO - Processing file /home/username/blackstraw/airflow/airflow/dags/prediction_dag.py for tasks to queue
+[2024-10-03T10:36:11.875+0530] {logging_mixin.py:190} INFO - [2024-10-03T10:36:11.875+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/username/blackstraw/airflow/airflow/dags/prediction_dag.py
+[2024-10-03T10:36:13.727+0530] {logging_mixin.py:190} INFO - [2024-10-03T10:36:13.727+0530] {warnings.py:109} WARNING - /home/username/blackstraw/airflow/airflow/dags/prediction_dag.py:88: RemovedInAirflow3Warning: Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead. 
+  with DAG(
+[2024-10-03T10:36:13.728+0530] {logging_mixin.py:190} INFO - [2024-10-03T10:36:13.728+0530] {warnings.py:109} WARNING - /home/username/blackstraw/airflow/airflow/dags/prediction_dag.py:98: RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+  extract_data_task = PythonOperator(
+[2024-10-03T10:36:13.729+0530] {logging_mixin.py:190} INFO - [2024-10-03T10:36:13.729+0530] {warnings.py:109} WARNING - /home/username/blackstraw/airflow/airflow/dags/prediction_dag.py:109: RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+  load_data_task = PythonOperator(
+[2024-10-03T10:36:13.731+0530] {processor.py:925} INFO - DAG(s) 'data_ingestion_dag' retrieved from /home/username/blackstraw/airflow/airflow/dags/prediction_dag.py
+[2024-10-03T10:36:13.739+0530] {logging_mixin.py:190} INFO - [2024-10-03T10:36:13.739+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-03T10:36:13.752+0530] {logging_mixin.py:190} INFO - [2024-10-03T10:36:13.751+0530] {dag.py:4180} INFO - Setting next_dagrun for data_ingestion_dag to None, run_after=None
+[2024-10-03T10:36:13.783+0530] {processor.py:208} INFO - Processing /home/username/blackstraw/airflow/airflow/dags/prediction_dag.py took 1.921 seconds
+[2024-10-03T10:36:44.377+0530] {processor.py:186} INFO - Started process (PID=9647) to work on /home/username/blackstraw/airflow/airflow/dags/prediction_dag.py
+[2024-10-03T10:36:44.379+0530] {processor.py:914} INFO - Processing file /home/username/blackstraw/airflow/airflow/dags/prediction_dag.py for tasks to queue
+[2024-10-03T10:36:44.383+0530] {logging_mixin.py:190} INFO - [2024-10-03T10:36:44.382+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/username/blackstraw/airflow/airflow/dags/prediction_dag.py
+[2024-10-03T10:36:46.610+0530] {logging_mixin.py:190} INFO - [2024-10-03T10:36:46.610+0530] {warnings.py:109} WARNING - /home/username/blackstraw/airflow/airflow/dags/prediction_dag.py:88: RemovedInAirflow3Warning: Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead. 
+  with DAG(
+[2024-10-03T10:36:46.612+0530] {logging_mixin.py:190} INFO - [2024-10-03T10:36:46.612+0530] {warnings.py:109} WARNING - /home/username/blackstraw/airflow/airflow/dags/prediction_dag.py:98: RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+  extract_data_task = PythonOperator(
+[2024-10-03T10:36:46.614+0530] {logging_mixin.py:190} INFO - [2024-10-03T10:36:46.613+0530] {warnings.py:109} WARNING - /home/username/blackstraw/airflow/airflow/dags/prediction_dag.py:109: RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+  load_data_task = PythonOperator(
+[2024-10-03T10:36:46.617+0530] {processor.py:925} INFO - DAG(s) 'data_ingestion_dag' retrieved from /home/username/blackstraw/airflow/airflow/dags/prediction_dag.py
+[2024-10-03T10:36:46.733+0530] {logging_mixin.py:190} INFO - [2024-10-03T10:36:46.733+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-03T10:36:46.746+0530] {logging_mixin.py:190} INFO - [2024-10-03T10:36:46.745+0530] {dag.py:4180} INFO - Setting next_dagrun for data_ingestion_dag to None, run_after=None
+[2024-10-03T10:36:46.774+0530] {processor.py:208} INFO - Processing /home/username/blackstraw/airflow/airflow/dags/prediction_dag.py took 2.405 seconds
+[2024-10-03T10:39:11.787+0530] {processor.py:186} INFO - Started process (PID=10844) to work on /home/username/blackstraw/airflow/airflow/dags/prediction_dag.py
+[2024-10-03T10:39:11.791+0530] {processor.py:914} INFO - Processing file /home/username/blackstraw/airflow/airflow/dags/prediction_dag.py for tasks to queue
+[2024-10-03T10:39:11.794+0530] {logging_mixin.py:190} INFO - [2024-10-03T10:39:11.793+0530] {dagbag.py:588} INFO - Filling up the DagBag from /home/username/blackstraw/airflow/airflow/dags/prediction_dag.py
+[2024-10-03T10:39:13.723+0530] {logging_mixin.py:190} INFO - [2024-10-03T10:39:13.722+0530] {warnings.py:109} WARNING - /home/username/blackstraw/airflow/airflow/dags/prediction_dag.py:88: RemovedInAirflow3Warning: Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead. 
+  with DAG(
+[2024-10-03T10:39:13.723+0530] {logging_mixin.py:190} INFO - [2024-10-03T10:39:13.723+0530] {warnings.py:109} WARNING - /home/username/blackstraw/airflow/airflow/dags/prediction_dag.py:98: RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+  extract_data_task = PythonOperator(
+[2024-10-03T10:39:13.724+0530] {logging_mixin.py:190} INFO - [2024-10-03T10:39:13.724+0530] {warnings.py:109} WARNING - /home/username/blackstraw/airflow/airflow/dags/prediction_dag.py:109: RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+  load_data_task = PythonOperator(
+[2024-10-03T10:39:13.725+0530] {processor.py:925} INFO - DAG(s) 'data_ingestion_dag' retrieved from /home/username/blackstraw/airflow/airflow/dags/prediction_dag.py
+[2024-10-03T10:39:13.729+0530] {logging_mixin.py:190} INFO - [2024-10-03T10:39:13.729+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-03T10:39:13.741+0530] {logging_mixin.py:190} INFO - [2024-10-03T10:39:13.741+0530] {dag.py:4180} INFO - Setting next_dagrun for data_ingestion_dag to None, run_after=None
+[2024-10-03T10:39:13.781+0530] {processor.py:208} INFO - Processing /home/username/blackstraw/airflow/airflow/dags/prediction_dag.py took 2.007 seconds

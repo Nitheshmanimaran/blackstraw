@@ -5,6 +5,6 @@ LABEL_COLUMN = 'SalePrice'
 
 SERIALIZER_EXTENSION = '.joblib'
 ARTIFACTS_DIR = '../../models/house-prices'
-SCALER_PATH = f'{ARTIFACTS_DIR}/scaler{SERIALIZER_EXTENSION}'
-ONE_HOT_ENCODER_PATH = f'{ARTIFACTS_DIR}/one_hot_encoder{SERIALIZER_EXTENSION}'
-MODEL_PATH = f'{ARTIFACTS_DIR}/model{SERIALIZER_EXTENSION}'
+SCALER_PATH = "/home/username/blackstraw/models/house-prices/scaler.joblib"
+ONE_HOT_ENCODER_PATH = "/home/username/blackstraw/models/house-prices/one_hot_encoder.joblib"
+MODEL_PATH = "/home/username/blackstraw/models/house-prices/model.joblib"

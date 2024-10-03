@@ -1,0 +1,1 @@
+MONITOR_DIR = "/home/username/blackstraw/raw_data"

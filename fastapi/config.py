@@ -8,6 +8,7 @@ class Config:
     DB_HOST = "localhost"
     DB_PORT = "5432"
 
+    #export PATH=$PATH:/home/username/.local/bin
     #export PATH=$PATH:~/.local/bin
     #export AIRFLOW_HOME=${PWD}/airflow
     #ps aux | grep airflow
@@ -15,5 +16,7 @@ class Config:
     #pkill -f "airflow scheduler"
     #pkill -f "airflow webserver"
     #export SENDER_EMAIL="nithesh.kumar@blackstraw.ai"
-    #export SENDER_PASSWORD="npcr lgni nors byst"
+    #export SENDER_PASSWORD=""
     #export RECEIVER_EMAIL="nithesh.kumar@blackstraw.ai"
+    #export PYTHONPATH=$(pwd)/..
+    #export PYTHONPATH=$PYTHONPATH:/home/username/blackstraw
